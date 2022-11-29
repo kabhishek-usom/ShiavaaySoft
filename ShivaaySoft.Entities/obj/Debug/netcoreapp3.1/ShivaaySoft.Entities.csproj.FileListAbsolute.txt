@@ -1,0 +1,10 @@
+D:\interview\ShivaaySoft\ShivaaySoft.Entities\bin\Debug\netcoreapp3.1\ShivaaySoft.Entities.deps.json
+D:\interview\ShivaaySoft\ShivaaySoft.Entities\bin\Debug\netcoreapp3.1\ShivaaySoft.Entities.dll
+D:\interview\ShivaaySoft\ShivaaySoft.Entities\bin\Debug\netcoreapp3.1\ShivaaySoft.Entities.pdb
+D:\interview\ShivaaySoft\ShivaaySoft.Entities\obj\Debug\netcoreapp3.1\ShivaaySoft.Entities.csproj.AssemblyReference.cache
+D:\interview\ShivaaySoft\ShivaaySoft.Entities\obj\Debug\netcoreapp3.1\ShivaaySoft.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\interview\ShivaaySoft\ShivaaySoft.Entities\obj\Debug\netcoreapp3.1\ShivaaySoft.Entities.AssemblyInfoInputs.cache
+D:\interview\ShivaaySoft\ShivaaySoft.Entities\obj\Debug\netcoreapp3.1\ShivaaySoft.Entities.AssemblyInfo.cs
+D:\interview\ShivaaySoft\ShivaaySoft.Entities\obj\Debug\netcoreapp3.1\ShivaaySoft.Entities.csproj.CoreCompileInputs.cache
+D:\interview\ShivaaySoft\ShivaaySoft.Entities\obj\Debug\netcoreapp3.1\ShivaaySoft.Entities.dll
+D:\interview\ShivaaySoft\ShivaaySoft.Entities\obj\Debug\netcoreapp3.1\ShivaaySoft.Entities.pdb

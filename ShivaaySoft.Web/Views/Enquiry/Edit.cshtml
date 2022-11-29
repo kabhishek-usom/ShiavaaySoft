@@ -1,0 +1,56 @@
+﻿@model EnquiryViewModel
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-primary">
+                    <div class="card-header py-2 bg-danger">
+                        <h5 class="card-title mb-0 text-white">Edit Enquiry</h5>
+                    </div>
+                    <form asp-controller="Enquiry" asp-action="Edit" method="post">
+                        @Html.ValidationSummary()
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <input type="hidden" value="@Model.Id">
+                        <div class="card-body">
+
+                            <input type="hidden" value="@Model.Id">
+                            <div class="form-group">
+                                <select class="form-control" asp-for="EnquiryTypeId">
+                                    <option selected disabled>Select Type</option>
+                                    @foreach (var item in ViewBag.EnquiryType)
+                                    {
+                                        <option value="@item.Id">@item.Title</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="title">First Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="title" asp-for="FirstName">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="lastname" asp-for="LastName">
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender <span class="text-danger">*</span></label>
+                                <select class="form-control" asp-for="Gender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="Calender">Date Of Birth<span class="text-danger">*</span></label>
+                                <input type="date" class="form-control" id="Calender" asp-for="Dob">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-success">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

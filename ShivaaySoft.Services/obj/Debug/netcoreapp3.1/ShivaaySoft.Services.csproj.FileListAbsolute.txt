@@ -1,0 +1,15 @@
+D:\interview\ShivaaySoft\ShivaaySoft.Services\bin\Debug\netcoreapp3.1\ShivaaySoft.Services.deps.json
+D:\interview\ShivaaySoft\ShivaaySoft.Services\bin\Debug\netcoreapp3.1\ShivaaySoft.Services.dll
+D:\interview\ShivaaySoft\ShivaaySoft.Services\bin\Debug\netcoreapp3.1\ShivaaySoft.Services.pdb
+D:\interview\ShivaaySoft\ShivaaySoft.Services\bin\Debug\netcoreapp3.1\ShivaaySoft.Entities.dll
+D:\interview\ShivaaySoft\ShivaaySoft.Services\bin\Debug\netcoreapp3.1\ShivaaySoft.Repositories.dll
+D:\interview\ShivaaySoft\ShivaaySoft.Services\bin\Debug\netcoreapp3.1\ShivaaySoft.Repositories.pdb
+D:\interview\ShivaaySoft\ShivaaySoft.Services\bin\Debug\netcoreapp3.1\ShivaaySoft.Entities.pdb
+D:\interview\ShivaaySoft\ShivaaySoft.Services\obj\Debug\netcoreapp3.1\ShivaaySoft.Services.csproj.AssemblyReference.cache
+D:\interview\ShivaaySoft\ShivaaySoft.Services\obj\Debug\netcoreapp3.1\ShivaaySoft.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\interview\ShivaaySoft\ShivaaySoft.Services\obj\Debug\netcoreapp3.1\ShivaaySoft.Services.AssemblyInfoInputs.cache
+D:\interview\ShivaaySoft\ShivaaySoft.Services\obj\Debug\netcoreapp3.1\ShivaaySoft.Services.AssemblyInfo.cs
+D:\interview\ShivaaySoft\ShivaaySoft.Services\obj\Debug\netcoreapp3.1\ShivaaySoft.Services.csproj.CoreCompileInputs.cache
+D:\interview\ShivaaySoft\ShivaaySoft.Services\obj\Debug\netcoreapp3.1\ShivaaySoft.Services.csproj.CopyComplete
+D:\interview\ShivaaySoft\ShivaaySoft.Services\obj\Debug\netcoreapp3.1\ShivaaySoft.Services.dll
+D:\interview\ShivaaySoft\ShivaaySoft.Services\obj\Debug\netcoreapp3.1\ShivaaySoft.Services.pdb

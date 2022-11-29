@@ -1,0 +1,29 @@
+﻿@model EnquiryTypeViewModel
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-primary">
+                    <div class="card-header py-2 bg-danger">
+                        <h5 class="card-title mb-0 text-white">Edit Enquiry Type</h5>
+                    </div>
+                    <form asp-controller="EnquiryType" asp-action="Edit" method="post">
+                        @Html.ValidationSummary()
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <input type="hidden" value="@Model.Id">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="title">Title <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="title" asp-for="Title">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-success">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

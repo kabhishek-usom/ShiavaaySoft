@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="p-4">
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+               Add New Enquiry
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger py-1">
+                            <h5 class="modal-title text-white" id="exampleModalLabel">Add New Enquiry</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form asp-controller="Enquiry" asp-action="Index" method="post">
+                                <div class="form-group">
+                                    <select class="form-control" name="EnquiryTypeId">
+                                        <option selected disabled>Select Type</option>
+                                        @foreach (var item in ViewBag.EnquiryType)
+                                        {
+                                            <option value="@item.Id">@item.Title</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="title">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="title" name="FirstName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="lastname" name="LastName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Gender <span class="text-danger">*</span></label>
+                                    <select class="form-control" name="Gender">
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Calender">Date Of Birth<span class="text-danger">*</span></label>
+                                    <input type="date" class="form-control" id="Calender" name="Dob">
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-success btn-sm">Add</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title mb-3">Enquiry Types</h5>
+            <table class="table" id="myEnquiryTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Dob</th>
+                        <th>Gender</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/enquiry.js"></script>
+}
