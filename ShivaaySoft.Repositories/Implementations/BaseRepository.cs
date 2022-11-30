@@ -21,7 +21,7 @@ namespace ShivaaySoft.Repositories.Implementations
 
         public async Task<TEntity> AddAsync(TEntity entity)
         {
-            _db.Set<TEntity>().Add(entity);
+            _dbSet.Add(entity);
             await _db.SaveChangesAsync();
             return entity;
         }
@@ -32,11 +32,7 @@ namespace ShivaaySoft.Repositories.Implementations
             return query.ToList();
         }
 
-        public IEnumerable<TEntity> GetSerchedData(Expression<Func<TEntity, bool>> filter)
-        {
-            IQueryable<TEntity> query = _dbSet;            
-            return query.Where(filter).ToList();
-        }
+       
 
         public TEntity GetFirstOrDefault(Expression<Func<TEntity, bool>> filter)
         {
@@ -53,7 +49,7 @@ namespace ShivaaySoft.Repositories.Implementations
 
         public async Task<TEntity> UpdateAsync(TEntity entity)
         {
-            _db.Set<TEntity>().Update(entity);
+            _dbSet.Update(entity);
             await _db.SaveChangesAsync();
             return entity;
         }

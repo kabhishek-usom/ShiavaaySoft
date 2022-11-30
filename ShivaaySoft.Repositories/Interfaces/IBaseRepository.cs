@@ -8,8 +8,7 @@ namespace ShivaaySoft.Repositories.Interface
 {
     public interface IBaseRepository<TEntity> where TEntity : class
     {
-        IEnumerable<TEntity> GetAll();
-        IEnumerable<TEntity> GetSerchedData(Expression<Func<TEntity, bool>> filter);
+        IEnumerable<TEntity> GetAll();     
         TEntity GetFirstOrDefault(Expression<Func<TEntity, bool>> filter);
         Task<TEntity> AddAsync(TEntity entity);
         Task<TEntity> UpdateAsync(TEntity entity);
